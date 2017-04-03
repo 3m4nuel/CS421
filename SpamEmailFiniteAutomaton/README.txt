@@ -4,7 +4,11 @@ INTRODUCTION
 Class: CS 421 - Theory of Computing
 Assignment: Programming #1
 Language: Java
-Description:
+Executable file: castillo_prog1.jar
+Test file: messagefile.txt
+
+-------------------------------------------------------
+DESCRIPTION
 -------------------------------------------------------
 Develop a program that parses a file of email blocks
 and determine which email is a spam based on a defined
@@ -28,7 +32,12 @@ in the "COMPILING & RUNNING" section below.
 COMPILING & RUNNING
 -------------------------------------------------------
 Step 1: Put the following files into the same directory:
-1) all *.java files
+1) all *.java files specified below:
+ a) EmailInfo.java
+ b) EmailTracker.java
+ c) Program.java (Main program)
+ d) SpamParser.java
+ e) States.java
 2) messagefile.txt (or any other file to parse)
 
 Step 2: Compile java files into class files
