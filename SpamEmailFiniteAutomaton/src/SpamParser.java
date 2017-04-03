@@ -45,9 +45,14 @@ public class SpamParser
 		
 	public List<EmailInfo> parse() throws FileNotFoundException, IOException
 	{
-		try(InputStream in = new FileInputStream(file);
-			Reader reader = new InputStreamReader(in, Charset.defaultCharset()))
+		InputStream in = null;
+		Reader reader = null;
+				
+		try
 		{	
+			in = new FileInputStream(file);
+			reader = new InputStreamReader(in, Charset.defaultCharset());
+					
 			/* Read file until end of file, reading through each email block */
 			while((input = reader.read()) != -1)
 			{
@@ -105,6 +110,15 @@ public class SpamParser
 				/* Reinitialize for next email to parse */
 				initVarsForIndividualEmail();
 			}
+		}
+		/* Close I/O resources */
+		finally
+		{
+			if(in != null)
+				in.close();
+			
+			if(reader != null)
+				reader.close();
 		}
 		
 		/* Print parsing results */
