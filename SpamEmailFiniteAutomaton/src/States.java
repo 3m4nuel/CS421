@@ -1,5 +1,3 @@
-package com.ecastillo.states;
-
 /* Purpose: 
  * --------------------------------------------------
  * This is an enum that defines the possible states

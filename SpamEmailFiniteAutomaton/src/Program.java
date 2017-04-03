@@ -1,8 +1,4 @@
-package com.ecastillo.main;
-
 import java.io.FileNotFoundException;
-
-import com.ecastillo.filehandlers.SpamParser;
 
 /* Purpose: 
  * --------------------------------------------------

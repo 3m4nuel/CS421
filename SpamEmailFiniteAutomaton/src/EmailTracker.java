@@ -1,5 +1,3 @@
-package com.ecastillo.filehandlers;
-
 /* Purpose: 
  * --------------------------------------------------
  * This class is used to assist

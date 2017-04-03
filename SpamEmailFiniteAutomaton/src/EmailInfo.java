@@ -1,7 +1,3 @@
-package com.ecastillo.filehandlers;
-
-import com.ecastillo.states.States;
-
 /* Purpose: 
  * --------------------------------------------------
  * This class represent a single email block that is
